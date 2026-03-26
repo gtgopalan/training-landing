@@ -1,0 +1,112 @@
+{
+  "siteTitle": "Training Series",
+  "nav": {
+    "logo": "TrainUp",
+    "cta": "Reserve My Spot"
+  },
+  "hero": {
+    "badge": "Limited Spots — Enrolment Open Now",
+    "headline": "Level Up Your Skills in Just a Few Weeks",
+    "subheadline": "Join our intensive training series and walk away with real, hands-on results you can use immediately.",
+    "formHeadline": "Reserve Your Free Spot",
+    "formSubtext": "Starts soon. No credit card required.",
+    "namePlaceholder": "Your first name",
+    "emailPlaceholder": "Your best email address",
+    "cta": "Get Instant Access →",
+    "socialProof": "Join 500+ professionals already signed up"
+  },
+  "trust": [
+    { "value": "500+", "label": "Professionals Enrolled" },
+    { "value": "5", "label": "Week Series" },
+    { "value": "100%", "label": "Free to Join" },
+    { "value": "Live", "label": "Interactive Sessions" }
+  ],
+  "benefits": {
+    "headline": "Why This Training Is Different",
+    "subheadline": "No slides-and-lecture fluff. Real frameworks, real practice, real results.",
+    "items": [
+      {
+        "icon": "⚡",
+        "title": "Intensive & Focused",
+        "description": "Every session is designed around one outcome — skills you can apply the same day."
+      },
+      {
+        "icon": "🎯",
+        "title": "Proven Methods",
+        "description": "Battle-tested approaches refined over years of real-world experience with top teams."
+      },
+      {
+        "icon": "🚀",
+        "title": "Fast, Visible Progress",
+        "description": "See measurable results within the first week. No long ramp-up, no theory overload."
+      },
+      {
+        "icon": "🤝",
+        "title": "Live Community",
+        "description": "Train alongside other driven professionals. Ask questions, share wins, stay accountable."
+      },
+      {
+        "icon": "📚",
+        "title": "Resources Included",
+        "description": "All templates, worksheets, and session replays included — yours to keep forever."
+      },
+      {
+        "icon": "🎓",
+        "title": "Expert-Led",
+        "description": "Trained directly by practitioners who've done the work, not just taught it."
+      }
+    ]
+  },
+  "trainer": {
+    "name": "Your Name",
+    "title": "Lead Trainer & Founder",
+    "bio": "With over a decade of hands-on experience, I've helped hundreds of professionals cut through the noise and build skills that actually move the needle. This series is everything I wish I'd had when starting out — condensed, focused, and built for results.",
+    "tagline": "\"I only teach what works.\"",
+    "photo": ""
+  },
+  "schedule": {
+    "headline": "What You'll Cover",
+    "items": [
+      { "week": "Week 1", "title": "Foundation & Mindset", "desc": "Set the stage with the core frameworks and mental models that drive everything." },
+      { "week": "Week 2", "title": "Core Skills Intensive", "desc": "Deep dive into the essential skills with hands-on exercises every session." },
+      { "week": "Week 3", "title": "Advanced Techniques", "desc": "Layer in advanced tactics that separate good from exceptional." },
+      { "week": "Week 4", "title": "Real-World Application", "desc": "Apply everything to your own projects with live feedback and coaching." },
+      { "week": "Week 5", "title": "Integration & Next Steps", "desc": "Lock in your gains, build your plan, and set up for long-term success." }
+    ]
+  },
+  "faq": {
+    "headline": "Common Questions",
+    "items": [
+      {
+        "question": "Who is this training for?",
+        "answer": "This training is designed for motivated professionals who want to accelerate their growth and see real, measurable results without wasting time on theory-heavy courses."
+      },
+      {
+        "question": "Is this really free?",
+        "answer": "Yes — the training series is completely free to join. Just sign up with your name and email to reserve your spot and get all the details."
+      },
+      {
+        "question": "How much time do I need each week?",
+        "answer": "Plan for 2–3 hours per week. Sessions are focused and efficient — no filler, no wasted time."
+      },
+      {
+        "question": "What if I miss a session?",
+        "answer": "All sessions are recorded. Replays and resources are sent to your email within 24 hours of each session."
+      },
+      {
+        "question": "When does it start?",
+        "answer": "Dates are being finalised. Sign up now and you'll be the first to know the exact schedule."
+      }
+    ]
+  },
+  "finalCta": {
+    "headline": "Ready to Level Up?",
+    "subheadline": "Spots are limited. Lock yours in now — it's completely free.",
+    "cta": "Reserve My Spot →"
+  },
+  "footer": {
+    "logo": "TrainUp",
+    "tagline": "Built for people who are serious about growth.",
+    "copyright": "© 2026 Training Series. All rights reserved."
+  }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training Series</title>
+  <meta name="description" content="Join our intensive training series and level up your skills in just a few weeks." />
+  <meta property="og:title" content="Training Series — Reserve Your Free Spot" />
+  <meta property="og:description" content="Intensive, hands-on training. Real results. 100% free to join." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Netlify Identity (for CMS login) -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+  <!-- ─── BACKGROUND ORBS ─────────────────────── -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ─── NAV ─────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo">TrainUp</a>
+      <a href="#signup" class="btn btn-sm" id="nav-cta">Reserve My Spot</a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <div class="badge" id="hero-badge">Limited Spots — Enrolment Open Now</div>
+        <h1 class="hero-headline" id="hero-headline">Level Up Your Skills in Just a Few Weeks</h1>
+        <p class="hero-sub" id="hero-sub">Join our intensive training series and walk away with real, hands-on results you can use immediately.</p>
+        <div class="hero-proof" id="hero-proof">
+          <div class="proof-avatars">
+            <span class="avatar">A</span>
+            <span class="avatar">B</span>
+            <span class="avatar">C</span>
+            <span class="avatar">D</span>
+          </div>
+          <span>Join 500+ professionals already signed up</span>
+        </div>
+      </div>
+
+      <div class="form-card" id="signup">
+        <div class="form-card-inner">
+          <h2 class="form-headline" id="form-headline">Reserve Your Free Spot</h2>
+          <p class="form-sub" id="form-sub">Starts soon. No credit card required.</p>
+
+          <form id="signup-form" novalidate>
+            <div class="field-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your first name"
+                required
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="field-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your best email address"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <button type="submit" class="btn btn-full" id="submit-btn">
+              <span id="btn-text">Get Instant Access →</span>
+              <span id="btn-loading" class="hidden">Signing you up…</span>
+            </button>
+            <p class="form-privacy">No spam, ever. Unsubscribe anytime.</p>
+          </form>
+
+          <div id="form-success" class="form-success hidden">
+            <div class="success-icon">🎉</div>
+            <h3>You're in!</h3>
+            <p>Check your inbox — your confirmation is on its way.</p>
+          </div>
+
+          <div id="form-error" class="form-error hidden">
+            <p>Something went wrong. Please try again or email us directly.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── TRUST BAR ─────────────────────────────── -->
+  <section class="trust-bar">
+    <div class="container trust-grid" id="trust-grid">
+      <div class="trust-item">
+        <span class="trust-value">500+</span>
+        <span class="trust-label">Professionals Enrolled</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-value">5</span>
+        <span class="trust-label">Week Series</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-value">100%</span>
+        <span class="trust-label">Free to Join</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-value">Live</span>
+        <span class="trust-label">Interactive Sessions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BENEFITS ──────────────────────────────── -->
+  <section class="section benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="benefits-headline">Why This Training Is Different</h2>
+        <p class="section-sub" id="benefits-sub">No slides-and-lecture fluff. Real frameworks, real practice, real results.</p>
+      </div>
+      <div class="benefits-grid" id="benefits-grid">
+        <!-- Populated by JS -->
+        <div class="benefit-card skeleton"></div>
+        <div class="benefit-card skeleton"></div>
+        <div class="benefit-card skeleton"></div>
+        <div class="benefit-card skeleton"></div>
+        <div class="benefit-card skeleton"></div>
+        <div class="benefit-card skeleton"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SCHEDULE ──────────────────────────────── -->
+  <section class="section schedule">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="schedule-headline">What You'll Cover</h2>
+      </div>
+      <div class="schedule-list" id="schedule-list">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TRAINER ───────────────────────────────── -->
+  <section class="section trainer">
+    <div class="container">
+      <div class="trainer-card">
+        <div class="trainer-avatar" id="trainer-avatar">YN</div>
+        <div class="trainer-body">
+          <div class="trainer-meta">
+            <span class="trainer-label">Your Trainer</span>
+            <h3 class="trainer-name" id="trainer-name">Your Name</h3>
+            <span class="trainer-title" id="trainer-title">Lead Trainer & Founder</span>
+          </div>
+          <p class="trainer-bio" id="trainer-bio">
+            With over a decade of hands-on experience, I've helped hundreds of professionals cut through the noise and build skills that actually move the needle.
+          </p>
+          <blockquote class="trainer-quote" id="trainer-quote">"I only teach what works."</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ──────────────────────────────────── -->
+  <section class="section faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="faq-headline">Common Questions</h2>
+      </div>
+      <div class="faq-list" id="faq-list">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FINAL CTA ─────────────────────────────── -->
+  <section class="section final-cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-headline" id="cta-headline">Ready to Level Up?</h2>
+        <p class="cta-sub" id="cta-sub">Spots are limited. Lock yours in now — it's completely free.</p>
+        <a href="#signup" class="btn btn-lg" id="cta-btn">Reserve My Spot →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo" id="footer-logo">TrainUp</span>
+      <span class="footer-tagline" id="footer-tagline">Built for people who are serious about growth.</span>
+      <span class="footer-copy" id="footer-copy">© 2026 Training Series. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+  <!-- Netlify Identity redirect for CMS -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

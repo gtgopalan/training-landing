@@ -1,0 +1,115 @@
+# ─── DECAP CMS CONFIG ─────────────────────────────────────────────────────────
+# Authentication via Netlify Identity + Git Gateway
+# Enable both in: Netlify Dashboard → Site Settings → Identity → Git Gateway
+
+backend:
+  name: git-gateway
+  branch: main   # change to your branch name if different
+
+# Media uploads (optional — for trainer photo)
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "landing"
+    label: "Landing Page"
+    files:
+      - name: "content"
+        label: "Page Content"
+        file: "content.json"
+        format: json
+        fields:
+          - { label: "Site Title (browser tab)", name: siteTitle, widget: string }
+
+          - label: "Navigation"
+            name: nav
+            widget: object
+            fields:
+              - { label: "Logo Text", name: logo, widget: string }
+              - { label: "Nav CTA Button", name: cta, widget: string }
+
+          - label: "Hero Section"
+            name: hero
+            widget: object
+            fields:
+              - { label: "Badge Text", name: badge, widget: string, hint: "The small pill at the top (e.g. 'Limited Spots')" }
+              - { label: "Headline", name: headline, widget: string }
+              - { label: "Sub-headline", name: subheadline, widget: text }
+              - { label: "Form Headline", name: formHeadline, widget: string }
+              - { label: "Form Sub-text", name: formSubtext, widget: string }
+              - { label: "Name Field Placeholder", name: namePlaceholder, widget: string }
+              - { label: "Email Field Placeholder", name: emailPlaceholder, widget: string }
+              - { label: "CTA Button Text", name: cta, widget: string }
+              - { label: "Social Proof Text", name: socialProof, widget: string }
+
+          - label: "Trust Bar Numbers"
+            name: trust
+            widget: list
+            fields:
+              - { label: "Value", name: value, widget: string, hint: "e.g. 500+" }
+              - { label: "Label", name: label, widget: string, hint: "e.g. Professionals Enrolled" }
+
+          - label: "Benefits Section"
+            name: benefits
+            widget: object
+            fields:
+              - { label: "Section Headline", name: headline, widget: string }
+              - { label: "Section Sub-headline", name: subheadline, widget: text }
+              - label: "Benefit Cards"
+                name: items
+                widget: list
+                fields:
+                  - { label: "Icon (emoji)", name: icon, widget: string }
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Description", name: description, widget: text }
+
+          - label: "Schedule / Curriculum"
+            name: schedule
+            widget: object
+            fields:
+              - { label: "Section Headline", name: headline, widget: string }
+              - label: "Weeks"
+                name: items
+                widget: list
+                fields:
+                  - { label: "Week Label", name: week, widget: string, hint: "e.g. Week 1" }
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Description", name: desc, widget: text }
+
+          - label: "Your Trainer"
+            name: trainer
+            widget: object
+            fields:
+              - { label: "Name", name: name, widget: string }
+              - { label: "Title / Role", name: title, widget: string }
+              - { label: "Bio", name: bio, widget: text }
+              - { label: "Pull Quote", name: tagline, widget: string, hint: "Shown as a blockquote" }
+              - { label: "Photo", name: photo, widget: image, required: false }
+
+          - label: "FAQ"
+            name: faq
+            widget: object
+            fields:
+              - { label: "Section Headline", name: headline, widget: string }
+              - label: "Questions"
+                name: items
+                widget: list
+                fields:
+                  - { label: "Question", name: question, widget: string }
+                  - { label: "Answer", name: answer, widget: text }
+
+          - label: "Final Call to Action"
+            name: finalCta
+            widget: object
+            fields:
+              - { label: "Headline", name: headline, widget: string }
+              - { label: "Sub-headline", name: subheadline, widget: string }
+              - { label: "Button Text", name: cta, widget: string }
+
+          - label: "Footer"
+            name: footer
+            widget: object
+            fields:
+              - { label: "Logo Text", name: logo, widget: string }
+              - { label: "Tagline", name: tagline, widget: string }
+              - { label: "Copyright", name: copyright, widget: string }
