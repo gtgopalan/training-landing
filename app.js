@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════
    CONFIG — update BACKEND_URL after Railway deploy
 ═══════════════════════════════════════════════ */
-const BACKEND_URL = 'https://YOUR-RAILWAY-APP.railway.app';  // ← update this
+const BACKEND_URL = 'https://training-backend-production-d587.up.railway.app';
 
 /* ═══════════════════════════════════════════════
    LOAD CONTENT FROM CMS
